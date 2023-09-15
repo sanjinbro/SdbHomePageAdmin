@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.hhu.sdb.mapper.NoticeMapper">
+
+    <resultMap id="BaseResultMap" type="edu.hhu.sdb.pojo.Notice">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="information" column="information" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,information
+    </sql>
+</mapper>
